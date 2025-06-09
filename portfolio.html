@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <script type="text/javascript" src="lightmode.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">AL-QZ</a>
+        <div class="void"></div>
+        <nav>
+            <ul id="sidebar">
+                <a onclick=hideSidebar()><img src="icons/closeg1.png" id="close-menu" ></a>
+                
+                <a href="index.html">Home</a>
+                <a href="#aboutme">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contactme">Contact</a>
+                  
+              
+            </ul>
+            <ul>
+                <a href="index.html" id="hideOnMobile">Home</a>
+                <a href="#aboutme" id="hideOnMobile">About</a>
+                <a href="#portfolio" id="hideOnMobile">Portfolio</a>
+                <a href="#contactme" id="hideOnMobile">Contact</a>
+              
+                <a  onclick=showSidebar()><img src="icons/menuburgergreen.png" id="menu-button" ></a>
+            </ul>
+        </nav>
+    </header>
+    <div id="switch">
+        <button id="theme-switch">
+            <img src="icons/sun1.png">
+            <img src="icons/moon.png">
+        </button>
+    </div>
+    <div id="portfolio"></div>
+    <br>
+    <section class="portfolio-section" >
+        <h1 style="font-size: 38px; margin-bottom: 50px; margin-top: 20px;">Portfolio Projects</h1>
+
+        <div class="portfolio-container" >
+
+            <div class="project">
+                <div class="project-image">
+                    <a href="https://csfjrzni.alqzportfolio.top">
+                        <img src="projects/dashp.png">
+                    </a>
+                </div>
+                <div class="group-link">
+                    <a href="https://csfjrzni.alqzportfolio.top/" class="p-link"  target="_blank">Demo</a>
+                    <a href="" class="p-link">GitHub</a>
+                </div>
+                <h1>Clinic Appointment</h1>
+                <p>Using Vanilla html, css, php and mysql</p>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <a href="https://studentrecord.alqzportfolio.top/studentrecord/admin.php">
+                        <img src="projects/dashp.png">
+                    </a>
+                </div>
+                <div class="group-link">
+                <a target="_blank" href="https://studentrecord.alqzportfolio.top/studentrecord/admin.php"  class="p-link">Demo</a>
+                <a href="" class="p-link">GitHub</a>
+                </div>
+                   <h1>Clinic Appointment</h1>
+                <p>Using Vanilla html, css, php and mysql</p>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                     <a href="https://csfjrzni.alqzportfolio.top">
+                    <img src="projects/csfjr.png">
+                </a>
+                </div>
+               <div class="group-link">
+                <a href="https://csfjrzni.alqzportfolio.top" class="p-link"  target="_blank">Demo</a>
+                <a href="" class="p-link">GitHub</a>
+                </div>
+                   <h1>Clinic Appointment</h1>
+                <p>Using Vanilla html, css, php and mysql</p>
+            </div>
+
+            <!-- 2nd row -->
+
+             <div class="project">
+                <div class="project-image">
+                    <a href="https://csfjrzni.alqzportfolio.top">
+                        <img src="projects/dashp.png">
+                    </a>
+                </div>
+                <div class="group-link">
+                    <a href="https://csfjrzni.alqzportfolio.top/" class="p-link"  target="_blank">Demo</a>
+                    <a href="" class="p-link">GitHub</a>
+                </div>
+                <h1>Clinic Appointment</h1>
+                <p>Using Vanilla html, css, php and mysql</p>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <a href="https://studentrecord.alqzportfolio.top/studentrecord/admin.php">
+                        <img src="projects/csfjr2.png">
+                    </a>
+                </div>
+                <div class="group-link">
+                <a target="_blank" href="https://studentrecord.alqzportfolio.top/studentrecord/admin.php"  class="p-link">Demo</a>
+                <a href="" class="p-link">GitHub</a>
+                </div>
+                   <h1>Clinic Appointment</h1>
+                <p>Using Vanilla html, css, php and mysql</p>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                     <a href="https://csfjrzni.alqzportfolio.top">
+                    <img src="projects/dashp.png">
+                </a>
+                </div>
+               <div class="group-link">
+                <a href="https://csfjrzni.alqzportfolio.top" class="p-link"  target="_blank">Demo</a>
+                <a href="" class="p-link">GitHub</a>
+                </div>
+                   <h1>Clinic Appointment</h1>
+                <p>Using Vanilla html, css, php and mysql</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact_container">
+            <p>Email: quininezaal@gmail.com</p>
+            <p>phone: 09</p>
+        </div>
+        
+    </section>
+    <div id="contactme"></div>
+    <br>
+   
+   
+
+    <script>
+        function showSidebar(){
+            document.getElementById("sidebar").style.display = "flex"
+        }
+        function hideSidebar(){
+            document.getElementById("sidebar").style.display = "none"
+        }
+    </script>
+
+</body>
+</html>
