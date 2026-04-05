@@ -5,37 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
    <script type="text/javascript" src="lightmode.js" defer></script>
-    <title>Home</title>
+    <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">AL-QZ</a>
-        <div class="void"></div>
         <nav>
+             <a href="index.html" class="logo" aria-label="Text logo that redirect to home page">ALQZ</a>
             <ul id="sidebar">
-                <a onclick=hideSidebar()><img src="icons/closeg1.png" id="close-menu" ></a>
+                <a onclick=hideSidebar() aria-label="hideSidebar JavaScript onclick"><img src="icons/closeg1.png" alt="close menu button" id="close-menu" ></a>
                 
                 <a href="index.html">Home</a>
-                <a href="#aboutme">About</a>
-                <a href="#portfolio">Portfolio</a>
+                <a href="index.html#aboutme">About</a>
+                <a href="portfolio.html">Portfolio</a>
                 <a href="#contactme">Contact</a>
                   
               
             </ul>
             <ul>
                 <a href="index.html" id="hideOnMobile">Home</a>
-                <a href="#aboutme" id="hideOnMobile">About</a>
-                <a href="#portfolio" id="hideOnMobile">Portfolio</a>
+                <a href="index.html#aboutme" id="hideOnMobile">About</a>
+                <a href="portfolio.html" id="hideOnMobile">Portfolio</a>
                 <a href="#contactme" id="hideOnMobile">Contact</a>
               
-                <a  onclick=showSidebar()><img src="icons/menuburgergreen.png" id="menu-button" ></a>
+                <a  onclick=showSidebar() aria-label="showSidebar JavaScript onclick"><img src="icons/menuburgergreen.png" alt="menu burger button" id="menu-button" ></a>
             </ul>
         </nav>
+     
     </header>
     <div id="switch">
         <button id="theme-switch">
-            <img src="icons/sun1.png">
-            <img src="icons/moon.png">
+               <a aria-label="Moon emoji for theme-switch toggle">🌚</a>
+            <a aria-label="Sun emoji for theme-switch toggle">🌝</a>
         </button>
     </div>
     <div id="portfolio"></div>
@@ -48,73 +47,29 @@
             <div class="project">
                 <div class="project-image">
                     <a href="https://csfjrzni.alqzportfolio.top">
-                        <img src="projects/dashp.png">
-                    </a>
-                </div>
-                <div class="group-link">
-                    <a href="https://csfjrzni.alqzportfolio.top/" class="p-link"  target="_blank">Demo</a>
-                    <a href="" class="p-link">GitHub</a>
-                </div>
-                <h1>Clinic Appointment</h1>
-                <p>Using Vanilla html, css, php and mysql</p>
-            </div>
-
-            <div class="project">
-                <div class="project-image">
-                    <a href="https://studentrecord.alqzportfolio.top/studentrecord/admin.php">
-                        <img src="projects/dashp.png">
-                    </a>
-                </div>
-                <div class="group-link">
-                <a target="_blank" href="https://studentrecord.alqzportfolio.top/studentrecord/admin.php"  class="p-link">Demo</a>
-                <a href="" class="p-link">GitHub</a>
-                </div>
-                   <h1>Clinic Appointment</h1>
-                <p>Using Vanilla html, css, php and mysql</p>
-            </div>
-
-            <div class="project">
-                <div class="project-image">
-                     <a href="https://csfjrzni.alqzportfolio.top">
-                    <img src="projects/csfjr.png">
-                </a>
-                </div>
-               <div class="group-link">
-                <a href="https://csfjrzni.alqzportfolio.top" class="p-link"  target="_blank">Demo</a>
-                <a href="" class="p-link">GitHub</a>
-                </div>
-                   <h1>Clinic Appointment</h1>
-                <p>Using Vanilla html, css, php and mysql</p>
-            </div>
-
-            <!-- 2nd row -->
-
-             <div class="project">
-                <div class="project-image">
-                    <a href="https://csfjrzni.alqzportfolio.top">
-                        <img src="projects/dashp.png">
-                    </a>
-                </div>
-                <div class="group-link">
-                    <a href="https://csfjrzni.alqzportfolio.top/" class="p-link"  target="_blank">Demo</a>
-                    <a href="" class="p-link">GitHub</a>
-                </div>
-                <h1>Clinic Appointment</h1>
-                <p>Using Vanilla html, css, php and mysql</p>
-            </div>
-
-            <div class="project">
-                <div class="project-image">
-                    <a href="https://studentrecord.alqzportfolio.top/studentrecord/admin.php">
                         <img src="projects/csfjr2.png">
                     </a>
                 </div>
                 <div class="group-link">
-                <a target="_blank" href="https://studentrecord.alqzportfolio.top/studentrecord/admin.php"  class="p-link">Demo</a>
+                    <a href="https://csfjrzni.alqzportfolio.top/" class="p-link"  target="_blank">Demo</a>
+                    <a href="" class="p-link">GitHub</a>
+                </div>
+                <h2>CSFJRZNI Static Website</h2>
+                <p>Developed a fully responsive static website using HTML and CSS for school project use.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <a href="">
+                        <img src="projects/dsc.png">
+                    </a>
+                </div>
+                <div class="group-link">
+                <a target="_blank" href=""  class="p-link">Demo</a>
                 <a href="" class="p-link">GitHub</a>
                 </div>
-                   <h1>Clinic Appointment</h1>
-                <p>Using Vanilla html, css, php and mysql</p>
+                   <h2>Skin Clinic Landing Page</h2>
+                <p>Using Vanilla html, & css prototype 1</p>
             </div>
 
             <div class="project">
@@ -124,11 +79,60 @@
                 </a>
                 </div>
                <div class="group-link">
-                <a href="https://csfjrzni.alqzportfolio.top" class="p-link"  target="_blank">Demo</a>
+                <a href="" class="p-link"  target="_blank">Demo</a>
                 <a href="" class="p-link">GitHub</a>
                 </div>
-                   <h1>Clinic Appointment</h1>
-                <p>Using Vanilla html, css, php and mysql</p>
+                   <h2>Clinic Appointment</h2>
+                <p>Usin html, css, php and mysql. No available demo/links it's a private.</p>
+            </div>
+
+            <!-- 2nd row -->
+
+             
+
+            
+
+            <div class="project">
+                <div class="project-image">
+                     <a href="https://csfjrzni.alqzportfolio.top">
+                    <img src="projects/dashp.png">
+                </a>
+                </div>
+               <div class="group-link">
+                <a href="" class="p-link"  target="_blank">Demo</a>
+                <a href="" class="p-link">GitHub</a>
+                </div>
+                   <h2>Clinic Appointment</h2>
+                <p>Usin html, css, php and mysql. No available demo/links it's a private.</p>
+            </div>
+
+            
+            <div class="project">
+                <div class="project-image">
+                    <a href="https://csfjrzni.alqzportfolio.top">
+                        <img src="projects/csfjr2.png">
+                    </a>
+                </div>
+                <div class="group-link">
+                    <a href="https://csfjrzni.alqzportfolio.top/" class="p-link"  target="_blank">Demo</a>
+                    <a href="" class="p-link">GitHub</a>
+                </div>
+                <h2>CSFJRZNI Static Website</h2>
+                <p>Developed a fully responsive static website using HTML and CSS for school project use.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <a href="">
+                        <img src="projects/dsc.png">
+                    </a>
+                </div>
+                <div class="group-link">
+                <a target="_blank" href=""  class="p-link">Demo</a>
+                <a href="" class="p-link">GitHub</a>
+                </div>
+                   <h2>Skin Clinic Landing Page</h2>
+                <p>Using Vanilla html, & css prototype 1</p>
             </div>
 
         </div>
